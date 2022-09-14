@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alta</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header__logo-container">
+            <img src="css/img/logo juguteria cosmica.png" alt="logo" class="main-header__logo-img">
+        </div>
+        <div class="main-header__search-form-container">
+            <form action="https://www.google.com/search" target="_blanck" class="main-header__search-form">
+                <label for="search" class="main-header__label"></label>
+                <input type="search" name="p" id="search" class="main-header__input-search" placeholder=" Encontra lo que queres..">
+                <input type="submit" class="main-header__input-submit" value="Buscar">
+            </form>
+        </div>
+
+        <div class="main-header__cart-button-container">
+            <img src="./css/img/carrito.png" alt="carrito" class="main-header__cart-img">
+        </div>
+        <div class="main-header__hamburger-button-container">
+            <label class="hamburger-button" for="main-nav-toggle" title="Expandir barra de navegación" >
+                <span class="hamburger-button__top-bread"></span>
+                <span class="hamburger-button__meat"></span>
+                <span class="hamburger-button__bottom-bread"></span>
+            </label>
+        </div>
+        <div class="main-header__main-nav-container">
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">Inicio</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="alta.html" target="_blank">Alta</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="contacto.html" target="_blank">Contacto</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="nosotros.html" target="_blank">Nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <form action="alta.html">
+
+        <div class="row">
+            <label for="nombre">Nombre:</label>
+            <input
+                id="nombre" name="nombre" autofocus required minlength="3"
+                maxlength="30" placeholder="TV de 65 pulgadas" value="TV" 
+            >
+        </div>
+
+        <div class="row">
+            <label for="precio">Precio:</label>
+            <input id="precio" name="precio" type="number" min="0" max="999999" step=".25">
+        </div>
+
+        <div class="row">
+            <label for="stock">Stock:</label>
+            <input name="stock" id="stock" type="number">
+        </div>
+
+        <div class="row">
+            <label for="stock">Marca</label>
+            <input name="stock" id="stock" type="number">
+        </div>
+            
+        <div class="row">
+            <label for="categoria">Categoría:</label>
+            <select name="categoria" id="categoria" required>
+
+                <option value="">Seleccioná una opción</option>
+                
+                <optgroup label="Entretenimiento">
+                    <option value="41">Consola</option>
+                    <option value="97">Home Theater</option>
+                    <option value="126">SmartTV</option>
+                </optgroup>
+                    
+                <optgroup label="Grandes electrodomésticos">
+                    <option value="83">Horno a gas</option>
+                    <option value="117">Horno eléctrico</option>
+                    <option value="143">Heladera</option>
+                    <option value="109">Lavarropas</option>
+                    <option value="43">Lavasecarropas</option>
+                    <option value="71">Microondas</option>
+                    <option value="25">Secarropas</option>
+                </optgroup>
+                
+                <optgroup label="Notebooks y accesorios">
+                    <option value="66">Funda</option>
+                    <option value="69">Notebook</option>
+                    <option value="147">Ultrabook</option>
+                </optgroup>
+                
+                <optgroup label="Pequeños electrodomésticos">
+                    <option value="39">Batidora</option>
+                    <option value="163">Cafetera</option>
+                    <option value="151">Sandwichera</option>
+                    <option value="96">Tostadora</option>    
+                </optgroup>
+                
+                <optgroup label="Smartphones y accesorios">
+                    <option value="153">Funda</option>
+                    <option value="58">Cargador con cable</option>
+                    <option value="88">Cargador inalámbrico</option>
+                    <option value="55">Smartphone</option>
+                </optgroup>
+            </select>
+        </div>
+            
+        <div class="row">
+            <label for="marca">Marca:</label>
+            <div>
+
+                <select class="margen-izq-100" name="marca" id="marca" required size="4">
+                    <option value="">Seleccioná una opción</option>
+                    <option value="44">Bose</option>
+                    <option value="97">DJI</option>
+                    <option value="33">LG</option>
+                    <option value="77">Liliana</option>
+                    <option value="64">Microsoft</option>
+                    <option value="64">Patrick</option>
+                    <option value="94">Philco</option>
+                    <option value="81">Philips</option>
+                    <option value="32">Samsung</option>
+                    <option value="83">Sony</option>
+                    <option value="66">Whirlpool</option>
+                </select>
+            </div>
+        </div>
+            
+        <div class="row">
+
+            <fieldset>
+                <legend>Garantía</legend>
+
+                <input type="radio" name="garantia" id="garantia1" value="6">
+                <label for="garantia1">6 meses:</label>
+                
+                <input type="radio" name="garantia" id="garantia2" value="12">
+                <label for="garantia2">12 meses:</label>
+                
+                <input type="radio" name="garantia" id="garantia3" value="24" checked>
+                <label for="garantia3">24 meses:</label>
+                
+                <input type="radio" name="garantia" id="garantia4" value="36" disabled>
+                <label for="garantia4">36 meses:</label>
+            </fieldset>
+
+        </div>
+            
+        <div class="row">
+            <input type="checkbox" name="envio" id="envio" checked>
+            <label for="envio">Envío sin cargo</label>
+        </div>
+
+        <div class="row">
+            <input type="hidden" name="cuotas12" value="no"> <!-- si queremos que se envie siempre "cuotas12" con un valor, ya sea si o no-->
+            <input type="checkbox" name="cuotas12" id="cuotas12" value="si">
+            <label for="cuotas12">12 cuotas sin interés</label>
+        </div>
+
+        <div class="row">
+            <label for="descripcion">Descripción:</label>
+            <div>
+                <textarea name="descripcion" id="descripcion" cols="50" rows="2"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <label for="foto">Foto</label>
+            <input type="file" name="foto" id="foto" accept="image/*">
+        </div>
+            
+        <div class="row">
+            <input class="margen-izq-100" type="submit" value="Dar de alta">
+            <input type="reset" value="Restablecer los campos">
+        </div>
+    </form>
+</body>
+</html>

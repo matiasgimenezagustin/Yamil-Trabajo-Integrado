@@ -1,0 +1,44 @@
+.section-cards {
+    // border: 3px solid green;
+    flex-basis: 100%;
+    min-width: 350px;
+
+    &__header {
+        text-align: center;
+        // border: 1px solid red;
+        font-size: 0;
+        color: #F2DBFF;
+    }
+
+    &__tittle {
+        font-size: 2rem;
+        animation: move 3s ease-in-out infinite;
+        color: hsl(278, 100%, 93%,);
+    }
+
+    @keyframes move {
+        0% {
+            transform: translate(-10%, 0);
+        }
+        50%{
+            text-shadow: 0 5px 30px rgba(0, 0, 0, 0.65);
+        }
+        100% {
+            transform:translate(10%, 0);
+        }
+    }
+
+    &__description {
+        font-size: 1.5rem;
+        animation: move 7s ease-in-out infinite;
+        color: hsl(278, 100%, 93%,);
+    }
+
+    &__footer {
+        // border: 2px solid green;
+        // background-color: yellow;
+    }
+
+
+
+}

@@ -1,0 +1,188 @@
+// .card {
+//     width: 100%;
+//     max-width: 450px;
+//     flex-grow: 1;
+//     box-shadow: 
+//         0 1px 5px rgba(0, 0, 0, .2),
+//         0 0   3px  rgba(0, 0, 0, .4)
+//     ;
+//     border-radius: 5px 5px 0 0;
+//     transition: all .2s;
+//     position: relative;
+    
+//     &:hover {
+//         /*width: 240px;*/
+//         /*transform: rotateZ(3deg) scale(1.1);*/
+//         transform: scale(1.05);
+//         transform-origin: bottom;
+//     }
+    
+//     background-color: pink;
+    
+//     &__image-container {
+//         height: 200px;
+//         /*border: solid 4px blue;*/
+//         background-color: #FFDBE8;
+//        position: relative;
+//     }
+//     &__favourite {
+//         position: absolute;
+//         top: 5px;
+//         right: 5px;
+//         /*border: solid 1px blue;*/
+//         width: 30px;
+//         border-radius: 50%;
+//         background-color: #FFC0CB;
+//         padding: 3px;
+//         cursor: pointer;
+//     }
+//     &__favourite:hover {
+//         background-color: #fff;
+//     }
+
+//     &__image {
+//         height: 180px;
+//         display: block;
+//         margin: 0 auto;
+//         /*object-fit: contain;*/
+//         /*border: 2px solid green;*/
+//     }
+
+//     &__link {
+//         text-decoration: none;
+//         display: block;
+//         position: absolute;
+//         /*border: solid 2px blue;*/
+//         z-index: 1;
+//         margin: 5px;
+//         width: 70px;
+//         border-radius: 20px;
+//         font-family:Verdana, Geneva, Tahoma, sans-serif;
+//         font-weight: bold;
+//         color: hsl(0, 10%, 20%);
+//         text-shadow: 0px 0px 1px #000;
+//     }
+
+//     &__heading {
+//         text-align: center;
+//     }
+//     &__price {
+//         font-weight: bold;
+//         margin-left: 5px;
+//     }
+//     &__description {
+//         font-weight: bold;
+//         /*text-justify: content;*/
+//         margin-left: 5px;
+//     }
+
+// }
+
+.card {
+    display: flex;
+    // border: 1px solid blue;
+    width: 100%;
+    max-width: 450px;
+    min-width: 350px;
+    height: 50vw;
+    position: relative;
+    box-shadow: 
+        0 1px 5px rgba(0, 0, 0, .2),
+        0 0   3px  rgba(0, 0, 0, .4)
+    ;
+    border-radius: 5px 5px 0 0;
+    transition: all .2s;
+    position: relative;
+    
+    &__article {
+        width: 50%;
+        // background-color: black;
+        display: flex;
+    }
+
+    &__link {
+        text-decoration: none;
+        display: block;
+        position: absolute;
+        /*border: solid 2px blue;*/
+        z-index: 1;
+        margin: 5px;
+        width: 70px;
+        border-radius: 20px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        color: hsl(0, 10%, 20%);
+        text-shadow: 0px 0px 1px #000;
+    }
+
+
+    &__favourite {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 30px;
+        border-radius: 50%;
+        padding: 3px;
+        cursor: pointer;
+        background-color: #F2DBFF;
+                
+    }
+
+    &__favourite:hover {
+        background-color: #FFC0CB;
+    }    
+
+    &__price {
+        font-weight: bold;
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        // margin-left: 5px;
+    }
+
+    &__image-container {
+        // border: 4px solid blueviolet;
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        background-color: hsl(278, 80%, 90%, .9);
+    }
+
+    &__image {
+        position: absolute;
+        // border: 1px solid green;
+        // display: block;
+        width: 100%;
+        margin-top: 35px;
+        object-fit: contain;
+    
+    }
+
+    &__content {
+        background-color: #FFDBE8;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        right: 0px;
+        top: 0px;
+        
+    }
+
+    &__heading {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    &__description {
+        // border: 1px solid blue;
+        text-align: center;
+    }        
+
+
+
+    @media (min-width:446px) {
+        //  width: 60%;
+    }
+
+}
+
